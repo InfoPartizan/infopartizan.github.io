@@ -3,83 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoPartizan | Master Suite</title>
+    <title>Инструменты для Рассылки и Умного Маркетинга | InfoPartizan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .bg-dark { background-color: #0f172a; }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
-        .gradient-text {
-            background: linear-gradient(45deg, #fbbf24, #f59e0b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; }
+        .gold-gradient { background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-glow:hover { box-shadow: 0 0 30px rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.5); }
+        .bg-mesh { background-image: radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.05) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.05) 0px, transparent 50%); }
     </style>
 </head>
-<body class="bg-dark text-white min-h-screen">
+<body class="bg-mesh">
+
+    <!-- Header -->
+    <nav class="border-b border-white/10 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">INFO<span class="text-amber-500">PARTIZAN</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#products" class="hover:text-amber-500 transition">Продукты</a>
+                <a href="#features" class="hover:text-amber-500 transition">Преимущества</a>
+                <a href="https://t.me/infopartizan" class="hover:text-amber-500 transition text-amber-500">Поддержка 24/7</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">MASTER SUITE</h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-            Профессиональные инструменты для автоматизации маркетинга и работы с мессенджерами.
-        </p>
+    <header class="py-24 text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
+                Инструменты для <span class="gold-gradient">Рассылки</span> и <br>Умного <span class="gold-gradient">Маркетинга</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Автоматизируйте продажи в мессенджерах с помощью профессионального софта. 
+                TG Master, Whats Master и Max Master — всё, что нужно для масштабирования вашего бизнеса.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#products" class="bg-amber-500 hover:bg-amber-600 text-black font-bold py-4 px-10 rounded-full transition transform hover:scale-105 shadow-lg shadow-amber-500/20">
+                    Смотреть продукты
+                </a>
+                <a href="https://t.me/infopartizan" class="border border-white/20 hover:bg-white/5 text-white font-bold py-4 px-10 rounded-full transition">
+                    Связаться с нами
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Products Grid -->
-    <main class="container mx-auto px-4 pb-24">
-        <div class="grid md:grid-cols-3 gap-8">
+    <section id="products" class="py-24 bg-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наша Экосистема</h2>
+                <p class="text-gray-400">Выберите инструмент под ваши задачи</p>
+            </div>
             
-            <!-- TG Master -->
-            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
-                <div class="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fab fa-telegram text-blue-400 text-3xl"></i>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- TG Master -->
+                <div class="bg-black border border-white/10 p-8 rounded-3xl card-glow transition group">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition">
+                        <i class="fab fa-telegram-plane text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">TG Master</h3>
+                    <p class="text-gray-400 mb-8">Лидер рынка для работы в Telegram. Парсинг, инвайт, рассылки и мощные чат-боты в одном флаконе.</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Умный парсинг аудитории</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Безопасный инвайтинг</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Автоответчик с ИИ</li>
+                    </ul>
+                    <a href="/tg-master/" class="block text-center py-3 rounded-xl border border-amber-500/50 text-amber-500 hover:bg-amber-500 hover:text-black transition font-semibold">
+                        Перейти на сайт
+                    </a>
                 </div>
-                <h2 class="text-2xl font-bold mb-4">TG Master</h2>
-                <p class="text-gray-400 mb-8 flex-grow">
-                    Ультимативное решение для автоматизации Telegram: рассылки, инвайты, парсинг и управление сеткой аккаунтов.
-                </p>
-                <a href="https://infopartizan.github.io/tg-master/" class="block text-center bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-semibold transition">
-                    Перейти к инструменту
-                </a>
-            </div>
 
-            <!-- Whats Master -->
-            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
-                <div class="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fab fa-whatsapp text-green-400 text-3xl"></i>
+                <!-- Whats Master -->
+                <div class="bg-black border border-white/10 p-8 rounded-3xl card-glow transition group">
+                    <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition">
+                        <i class="fab fa-whatsapp text-green-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Whats Master</h3>
+                    <p class="text-gray-400 mb-8">Профессиональная автоматизация WhatsApp. Массовые рассылки без банов и CRM интеграции.</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Массовая рассылка</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Валидатор номеров</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Кнопочные сообщения</li>
+                    </ul>
+                    <a href="/whats-master/" class="block text-center py-3 rounded-xl border border-amber-500/50 text-amber-500 hover:bg-amber-500 hover:text-black transition font-semibold">
+                        Перейти на сайт
+                    </a>
                 </div>
-                <h2 class="text-2xl font-bold mb-4">Whats Master</h2>
-                <p class="text-gray-400 mb-8 flex-grow">
-                    Автоматизация WhatsApp без блокировок. Массовые рассылки, чат-боты и работа с базой клиентов.
-                </p>
-                <a href="https://infopartizan.github.io/whats-master/" class="block text-center bg-green-600 hover:bg-green-700 py-3 rounded-xl font-semibold transition">
-                    Перейти к инструменту
-                </a>
-            </div>
 
-            <!-- Max Master -->
-            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
-                <div class="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-rocket text-amber-400 text-3xl"></i>
+                <!-- Max Master -->
+                <div class="bg-black border border-white/10 p-8 rounded-3xl card-glow transition group">
+                    <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition">
+                        <i class="fas fa-rocket text-amber-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Max Master</h3>
+                    <p class="text-gray-400 mb-8">Ультимативный комбайн для маркетинга. Объединяет лучшие функции всех систем в одном интерфейсе.</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Мультиаккаунтность</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Глобальный поиск ЦА</li>
+                        <li><i class="fas fa-check text-amber-500 mr-2"></i> Интеграция с ChatGPT</li>
+                    </ul>
+                    <a href="/max-master/" class="block text-center py-3 rounded-xl border border-amber-500/50 text-amber-500 hover:bg-amber-500 hover:text-black transition font-semibold">
+                        Перейти на сайт
+                    </a>
                 </div>
-                <h2 class="text-2xl font-bold mb-4">Max Master</h2>
-                <p class="text-gray-400 mb-8 flex-grow">
-                    Комбайн для работы с социальными сетями и ИИ-агентами. Максимальная мощь в одном приложении.
-                </p>
-                <a href="https://infopartizan.github.io/max-master/" class="block text-center bg-amber-600 hover:bg-amber-700 py-3 rounded-xl font-semibold transition">
-                    Перейти к инструменту
-                </a>
             </div>
-
         </div>
-    </main>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 border-t border-white/10">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-amber-500 mb-2">5000+</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Клиентов</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-amber-500 mb-2">10M+</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Сообщений</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-amber-500 mb-2">99%</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Uptime</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-amber-500 mb-2">24/7</div>
+                <div class="text-gray-400 text-sm uppercase tracking-wider">Поддержка</div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 py-12 text-center text-gray-500">
-        <p>&copy; 2026 InfoPartizan. Все права защищены.</p>
+    <footer class="py-12 border-t border-white/10 bg-black">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-xl font-bold mb-6 italic">INFO<span class="text-amber-500">PARTIZAN</span></div>
+            <div class="flex justify-center space-x-6 mb-8 text-gray-400">
+                <a href="https://t.me/infopartizan" class="hover:text-white transition"><i class="fab fa-telegram text-2xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-youtube text-2xl"></i></a>
+            </div>
+            <p class="text-gray-600 text-sm">&copy; 2026 InfoPartizan Marketing Tools. Все права защищены.</p>
+        </div>
     </footer>
 
 </body>
