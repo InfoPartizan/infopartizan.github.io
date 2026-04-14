@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoPartizan | Master Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-dark { background-color: #0f172a; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .gradient-text {
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white min-h-screen">
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">MASTER SUITE</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            Профессиональные инструменты для автоматизации маркетинга и работы с мессенджерами.
+        </p>
+    </header>
+
+    <!-- Products Grid -->
+    <main class="container mx-auto px-4 pb-24">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- TG Master -->
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
+                <div class="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fab fa-telegram text-blue-400 text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">TG Master</h2>
+                <p class="text-gray-400 mb-8 flex-grow">
+                    Ультимативное решение для автоматизации Telegram: рассылки, инвайты, парсинг и управление сеткой аккаунтов.
+                </p>
+                <a href="https://infopartizan.github.io/tg-master/" class="block text-center bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-semibold transition">
+                    Перейти к инструменту
+                </a>
+            </div>
+
+            <!-- Whats Master -->
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
+                <div class="w-16 h-16 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fab fa-whatsapp text-green-400 text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">Whats Master</h2>
+                <p class="text-gray-400 mb-8 flex-grow">
+                    Автоматизация WhatsApp без блокировок. Массовые рассылки, чат-боты и работа с базой клиентов.
+                </p>
+                <a href="https://infopartizan.github.io/whats-master/" class="block text-center bg-green-600 hover:bg-green-700 py-3 rounded-xl font-semibold transition">
+                    Перейти к инструменту
+                </a>
+            </div>
+
+            <!-- Max Master -->
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover flex flex-col">
+                <div class="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-rocket text-amber-400 text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">Max Master</h2>
+                <p class="text-gray-400 mb-8 flex-grow">
+                    Комбайн для работы с социальными сетями и ИИ-агентами. Максимальная мощь в одном приложении.
+                </p>
+                <a href="https://infopartizan.github.io/max-master/" class="block text-center bg-amber-600 hover:bg-amber-700 py-3 rounded-xl font-semibold transition">
+                    Перейти к инструменту
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12 text-center text-gray-500">
+        <p>&copy; 2026 InfoPartizan. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
